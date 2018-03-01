@@ -124,7 +124,8 @@ public class TFTPServer
 	private int ParseRQ(byte[] buf, StringBuffer requestedFile) 
 	{
 		// See "TFTP Formats" in TFTP specification for the RRQ/WRQ request contents
-		
+		//2bytes for op code, 2 bytes for block, then the rest is data
+
 		return opcode;
 	}
 
